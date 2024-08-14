@@ -1,0 +1,346 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* margin-left: 10px;
+    margin-right: 5px; */
+}
+
+body {
+
+    background-color: rgb(144, 144, 219);
+
+
+}
+
+i {
+    padding-top: 20px;
+    padding-left: 5px;
+    margin: 0px 5px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0px;
+    background-color: pink;
+    color: rgb(229, 229, 199);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header ul {
+    display: flex;
+    margin: 2px;
+}
+
+header ul li {
+    text-decoration: none;
+    margin: 10px 20px;
+    list-style: none;
+    font-size: medium;
+}
+
+header ul li a:hover {
+    text-shadow: 7px 6px 9px rgb(199, 38, 199);
+}
+
+
+header img {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    border: 5px double black;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+header img:hover {
+    transform: scale(1.5);
+}
+
+#banner {
+    width: 100%;
+    height: 400px;
+    display: block;
+
+}
+
+#welcome {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: large;
+    border: 5px double rgba(255, 255, 255, 0.526);
+    padding: 30px;
+    background-color: rgba(245, 245, 220, 0.37);
+    position: absolute;
+}
+
+.row1 {
+    display: flex;
+    margin-top: 700px;
+    margin-left: 100px;
+}
+
+.col1 {
+    display: flex;
+
+    font-size: xx-large;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.col1 img {
+    width: 600px;
+    height: 500px;
+}
+
+.col1 h2 {
+    margin-top: 200px;
+    margin-left: 100px;
+    text-align: center;
+    color: black;
+}
+
+.col1 h2:hover {
+    color: white;
+}
+
+#about {
+    color: aliceblue;
+    font-size: xx-large;
+    text-align: center;
+    font-family: "Playwrite AR", cursive;
+    margin-top: 150px;
+}
+
+#about:hover {
+    color: rgb(53, 2, 79);
+}
+
+.row2 {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+
+.col2 {
+    text-align: justify;
+
+}
+
+.col2 h2 {
+    font-size: xx-large;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    padding-bottom: 30px;
+    text-shadow: 2px 3px white;
+}
+
+
+
+.col2 p {
+    /* padding: 30px; */
+    font-size: medium;
+    margin-left: 20px;
+    margin-right: 50px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.col2 img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20%;
+    margin-right: 20px;
+    padding-top: 50PX;
+}
+
+#proj {
+
+    height: 700px;
+    background-color: rgb(201, 148, 250);
+}
+
+#pro {
+    margin-top: 200px;
+    padding-top: 30px;
+    text-align: center;
+    color: azure;
+    font-size: xx-large;
+}
+
+#pro:hover {
+    text-shadow: 4px 5px 6px black;
+}
+
+.row3 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.col3 img {
+
+    width: 300px;
+    height: 200px;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: rgb(107, 88, 185);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#service {
+    margin-top: 10px;
+    height: 700px;
+    background-color: rgb(229, 211, 188);
+}
+
+#ser {
+    text-align: center;
+    color: black;
+}
+
+#ser:hover {
+    color:rgba(128, 0, 0, 0.889);
+}
+
+.row4 {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    padding-left: 0px;
+    justify-content: space-between;
+}
+
+.col4 img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.col4 {
+    border: 2px solid;
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    /* Add space between columns */
+    flex: 1;
+    /* Ensures columns are of equal width */
+}
+
+/* Remove the right margin from the last column to avoid extra space */
+.col4:last-child {
+    margin-right: 10px;
+}
+
+#contact {
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(140, 216, 140);
+   /* padding-top: 20px; */
+
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+#contact h1:hover{
+    transform: scale(1.5);
+}
+fieldset{
+    margin-top: 20px;
+    width:50%;
+}
+label {
+    /* display: block; Ensure the label takes up the full width */
+    margin-bottom: 2px ;
+     /* Add a small margin below the label */
+     margin-top: 40px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%; /* Make the input boxes take up the full width of their container */
+    max-width: 400px; /* Set a maximum width for the input boxes */
+    height: 50px; /* Set the height for the input boxes */
+    margin-bottom: 20px; /* Add some space between the input boxes */
+    padding: 10px; /* Add some padding inside the input boxes */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 40px;
+}
+
+textarea {
+    height: 150px; /* Set a specific height for the textarea */
+}
+
+form button {
+
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color:maroon;
+    color: beige;
+}
